@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+.bgimg {
+  background-image: url("./assets/images/background2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.heroBgGradient {
+  background: linear-gradient(107.77deg, #0c5bc6 15.95%, #4192ff 100%);
+}
+
+.heroCircleGradient {
+  background: linear-gradient(
+    135deg,
+    hsla(212, 90%, 52%, 1) 82%,
+    hsla(208, 67%, 65%, 1) 100%
+  );
+  background-blend-mode: multiply;
+}
+
+.control-arrow {
+}
+
+.carousel-status,
+.control-dots {
+  display: none;
+}
+
+.slide,
+.previous {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

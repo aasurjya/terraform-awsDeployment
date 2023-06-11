@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LF2VE78VVB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-LF2VE78VVB");
+    </script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Poppins:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&family=Reem+Kufi:wght@400;500;600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- HTML Meta Tags -->
+    <title>XeroCodee Save 10000s of expensive coder hours</title>
+    <meta
+      name="description"
+      content="You get just what you need to run your cloud workloads--no more, no less. Deploy from our single pane of glass, manage them with ease and scale up as fast as your workload grows."
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://xerocodee.com/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="XeroCodee - Save 10000s of expensive coder hours"
+    />
+    <meta
+      property="og:description"
+      content="You get just what you need to run your cloud workloads--no more, no less. Deploy from our single pane of glass, manage them with ease and scale up as fast as your workload grows."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/xerocodee/.github/main/XeroCodee%20BG.png"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="xerocodee.com" />
+    <meta property="twitter:url" content="https://xerocodee.com/" />
+    <meta
+      name="twitter:title"
+      content="XeroCodee - Save 10000s of expensive coder hours"
+    />
+    <meta
+      name="twitter:description"
+      content="You get just what you need to run your cloud workloads--no more, no less. Deploy from our single pane of glass, manage them with ease and scale up as fast as your workload grows."
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/xerocodee/.github/main/XeroCodee%20BG.png"
+    />
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M8RNM8P");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M8RNM8P"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="root"></div>
+
+    <noscript>Save 10000s of expensive coder hours</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
