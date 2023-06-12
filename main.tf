@@ -10,13 +10,10 @@ resource "aws_lambda_function" "frontend_lambda" {
   timeout = 30  # Replace with the desired timeout value
   memory_size = 128  # Replace with the desired memory size
   
-  // Replace with your frontend application code
   // The code must be zipped and stored in an S3 bucket for Lambda deployment
-  // You can use the "aws_lambda_function" resource's "filename" attribute to specify the S3 location of your code
+  // "aws_lambda_function" resource's "filename" attribute to specify the S3 location of your code
   filename = "s3://your-bucket-name/frontend-lambda.zip"
-  
-  // Other configuration options for your Lambda function
-  // ...
+
 }
 
 resource "aws_iam_role" "lambda_role" {
